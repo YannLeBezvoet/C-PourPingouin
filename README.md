@@ -15,6 +15,7 @@ Bon il y a quand même quelques prérequis pour ce cours : avoir beaucoup de ca
 - [Présentation du C++](#Présentation-du-C++)
 - [L'IDE](#L'IDE)
 - [Hello world](#Hello-world)
+- [Les variables](#Les-commentaires)
 
 ## Présentation du C++
 
@@ -104,3 +105,44 @@ int main() {
 
 Felicitation vous avez écrit votre premier programme et vous n'avez rien compris parce que j'ai simplifié au maximum,
 maintenant il est temps de coder pour de vrai !
+
+## Les commentaires
+
+Comme dans tout langage moderne C++ permet de commenter votre code, c'est-à-dire de laisser de petits textes explicatifs
+qui ne seront pas interprétés par le compilateur. Ces textes permettent à vos collègues une meilleure compréhension de
+votre code et à vous retrouver plus facilement dans votre code. Le commentaire peut aussi être utilisé pour empêcher le
+compilateur de lire certains morceaux de votre code lors de phase de debugging.
+
+Il existe deux types de commentaires : les commentaires de fin de ligne et les commentaires libres.
+
+### Les commentaires de fin de ligne
+
+Les commentaires de fin de lignes sont introduit par C++ : ils s'écrivent avec ```\\```, tout ce qui se trouve après ces
+deux characters sur une n'est plus interprété par le compilateur.
+
+#### Exemple
+```
+cout << "Salut les pingouins" << endl; // Affiche du texte
+// cout << "Salut les pingouins" << endl; n'affiche rien du tout 
+```
+
+### Les commentaires libres
+
+Les commentaires libres sont hérités du C. Ils permettent de mettre plusieurs lignes en commentaire, on ouvre un
+commentaire libre avec ```/*``` et on le ferme avec ```*/```, tout ce qui se trouve entre ces deux symboles se trouvent
+commenter.
+
+#### Exemple
+
+```
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Salut les pingouins" << endl;
+    /* Ceci est un commentaire
+     de plusieurs lignes */
+    return 0;
+}
+```
