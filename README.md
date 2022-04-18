@@ -1,2 +1,8 @@
-# C-PourPingouin
-Vous n'avez jamais fait de C++ et vous ne parler qu'un peu franglais ? Ce tutoriel est pour vous (surtout si vous êtes un pingouin) !
+# Le C++ Pour les Pingouins
+
+## Introduction
+
+Bonjour mes pingouins, ce cours s'adresse aux débutants comme aux confirmés voulant approfondir des notions de C++.
+
+Il est conseillé aux débutants de lire ce cours dans l'ordre et à ceux voulant approfondir leur connaissance du C++
+d'aller directement aux notions voulues via le sommaire.
