@@ -264,7 +264,7 @@ Bon, j'en vois s'impatienter parce que j'explique des trucs, mais on ne code pas
 
 C'est pour ça que maintenant nous allons voir l'initialisation des variables.
 
-Chaque type de variable s'initialise avec les mots-clés vu precedent (nous allons revenir dessus).
+Chaque type de variable s'initialise avec les mots-clés vu précédemment (nous allons revenir dessus).
 
 Déclarons dans `main` une variable `x` : `int x;`
 
