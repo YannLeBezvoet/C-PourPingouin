@@ -7,7 +7,7 @@ Bonjour mes pingouins, ce cours s'adresse aux débutants comme aux confirmés vo
 Il est conseillé aux débutants de lire ce cours dans l'ordre et à ceux voulant approfondir leur connaissance du C++
 d'aller directement aux notions voulues via le sommaire.
 
-Bon il y a quand même quelques prérequis pour ce cours : avoir beaucoup de café et posséder un canard en plastique.
+Bon il y a quand même quelques prérequis pour ce cours : avoir beaucoup de café et posséder un canard en plastique.
 
 
 ## Sommaire
@@ -15,7 +15,8 @@ Bon il y a quand même quelques prérequis pour ce cours : avoir beaucoup de ca
 - [Présentation du C++](#Présentation-du-C++)
 - [L'IDE](#L'IDE)
 - [Hello world](#Hello-world)
-- [Les variables](#Les-commentaires)
+- [Les commentaires](#Les-commentaires)
+- [Les variables](#Les-variables)
 
 ## Présentation du C++
 
@@ -89,7 +90,7 @@ Vous remarquerez que le mot clé ```std::``` revient à plusieurs reprises, et q
 
 Une petite parade à ça consiste à inclure cette ligne dans le fichier ```using namespace std;```.
 
-Ce qui nous donne :
+Ce qui nous donne :
 
 ```
 #include <iostream>
@@ -146,3 +147,27 @@ int main() {
     return 0;
 }
 ```
+
+## Les variables
+
+Rentrons maintenant dans le vif du sujet, qu'est-ce qu'une variable ?
+Les variables sont des éléments qui associe un nom à une donnée physiquement implanté dans la mémoire de la machine.
+
+Il existe différents types de variables, voyons les types de base : 
+
+| Type de variable | Signification               | Taille en octets | Plage de valeur valide   |
+|------------------|-----------------------------|------------------|--------------------------|
+| int              | Nombre entier               | 4                | -2147483648 à 2147483647 |
+| short int        | Entier court                | 2                | -32768 à 32767           |
+| float            | Flottant (nombre à virgule) | 4                | 3,4E-38 à 3,4E+38        |
+| double           | Flottant double             | 8                |                          |
+| long double      | Flottant double long        | 10               | 	-3,4E-4932 à 3,4E4932   |
+| bool             | Booléen                     | 1                | 0 ou 1, faux ou vrai     |
+| char             | Caractère                   | 1                | 	-128 à 127              |
+
+**Remarque** : _Je n'ai volontairement pas mis les types unsigned qui feront l'objet de leur propre partie ni les type
+qui n'ont leur utilité que sur des processeurs 16 bits._
+
+Alors j'en vois déjà certains se cacher en se demandant "c'est quoi ce truc ?" mais pas de panique nous allons voir les 
+types un par un.
+<img src="rcs/cacher.gif" alt="HelloWorld"/>
