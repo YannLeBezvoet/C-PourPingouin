@@ -18,6 +18,8 @@ Bon il y a quand même quelques prérequis pour ce cours : avoir beaucoup de caf
 - [Les commentaires](#Les-commentaires)
 - [Les variables](#Les-variables)
 - [Initialisation des variables](#Initialisation-des-variables)
+- [Base de l'input utilisateur](#Base-de-l'input-utilisateur)
+- [Les opérations arithmétiques et les conversions](#Les-opérations-arithmétiques-et-les-conversions)
 
 ## Présentation du C++
 
@@ -292,7 +294,7 @@ Nous pouvons aussi les initialiser en même temps, l'initialisation se fait de l
 int x = y = 2; // y est initialisé à 2, x est initialisé par y
 ```
 
-### Initialisation par parentheses
+### Initialisation par parenthèses
 
 Pour le moment cela ne nous est pas très utile (mais ça le sera dans le chapitre sur les patrons de classe), mais nous
 pouvons initialiser notre variable de la sorte : 
@@ -319,3 +321,25 @@ int y = { 2.5 }; // Refusé par le compilateur
 **Remarque** : il existe deux mots clés que nous n'avons pas encore vu pour l'initialisation des variables, il s'agit 
 d'**auto** permettant de définir automatiquement le type de la variable et le mot clé **const** empêchant
 la modification de la variable. Nous utiliserons ces mots-clés plus tard.
+
+## Base de l'input utilisateur
+
+Alors c'est bien marrant tout ça, mais si l'utilisateur ne peut rien taper on perd pas mal d'utilités à nos programmes,
+je vais donc vous montrer comment l'utilisateur peu faire une entrée clavier.
+Nous allons utiliser le flux d'entrée standard de C++ contenu dans l'entête `<iostream>`.
+```
+int x;
+cout << "Tapez un nombre: "; // Pas de endl ici pour ne pas faire de retour à la ligne
+cin >> x;
+cout << x << endl;
+```
+output : 
+```
+Tapez un nombre: 5
+5
+```
+## Les opérations arithmétiques et les conversions
+
+Ce chapitre va vous présenter les différents types d'opération arithmétiques et leur priorité, si tu as un minimum bossé
+au college, tu devrais connaitre tes priorités arithmétiques, mais un bref rappel ne fera pas de mal.
+
