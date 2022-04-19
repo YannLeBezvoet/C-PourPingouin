@@ -215,3 +215,19 @@ déterminer le signe, ce sera toujours positif.
 
 On va prendre un **short**, en temps normal sa plage de données va de -32768 à 32767, bon bas là tu oublies la partie
 négative et tu doubles la plage positive ce qui donne une plage allant de 0 à (32767 * 2 + 1) soit 0 à 65535.
+
+### Les types flottants
+
+Les types **flottants** dîtes-vous ?
+
+<img src="rcs/int.png" alt="interrogation"/>
+
+Les types flottants sont basiquement une représentation approchée d'un nombre réel (nombre à virgule tsé).
+Il existe plusieurs types de float en fonction de la taille qui leur est alloué de la même manière que pour les types
+entiers : **float**, **double** et **long double**.
+
+**Remarque** : _la suite de cette partie s'adresse à ceux voulant approfondir la notion de nombre flottant._
+
+Les types flottants s'inspirent de la notation scientifique où un nombre s'écrit sous la forme 3,8x10⁴.
+On appelle **mantisse** (M) la valeur qui est le facteur d'une puissance de 10. On appelle exposant (E) la puissance de 10.
+Chaque flottant est représenté par **M.B^E** où B représente la base de la machine (soit 2, soit 16).
