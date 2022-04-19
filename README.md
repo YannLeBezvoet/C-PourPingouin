@@ -17,6 +17,7 @@ Bon il y a quand même quelques prérequis pour ce cours : avoir beaucoup de caf
 - [Hello world](#Hello-world)
 - [Les commentaires](#Les-commentaires)
 - [Les variables](#Les-variables)
+- [Initialisation des variables](#Initialisation-des-variables)
 
 ## Présentation du C++
 
@@ -254,3 +255,63 @@ En C++ les caractères sont codés sur un octet est déclaré avec le mot clé *
 Bon ça, c'est le type le plus simple, en fait, c'est une variable qui ne peu prendre que deux valeurs : vrai ou faux.
 Cette variable est codée sur un octet et se déclare avec le mot clé **bool**.
 On y associe les deux mots-clés suivants : **false** et **true** pour exprimer la valeur qu'elle contient.
+
+## Initialisation des variables
+
+Bon, j'en vois s'impatienter parce que j'explique des trucs, mais on ne code pas beaucoup. 
+
+<img src="rcs/nrv.png" alt="nrv"/>
+
+C'est pour ça que maintenant nous allons voir l'initialisation des variables.
+
+Chaque type de variable s'initialise avec les mots-clés vu precedent (nous allons revenir dessus).
+
+Déclarons dans `main` une variable `x` : `int x;`
+
+Lorsque l'on déclare une variable de la sorte, sa valeur est inconnue et donc le programme est imprévisible :
+
+```
+int main() {
+    int x;
+    cout << x << endl; // La valeur affichée est imprévisible
+    return 0;
+}
+```
+Il est conseillé d'initialiser explicitement les variables lors de leur déclaration avec l'opérateur **=** : 
+```
+int x = 10;
+cout << x << endl; // Affiche 10
+```
+Nous pouvons déclarer plusieurs variables à la fois en séparant chaque nom de variable par une virgule :
+```
+int x, y, z;
+```
+
+Nous pouvons aussi les initialiser en même temps, l'initialisation se fait de la droite vers la gauche : 
+```
+int x = y = 2; // y est initialisé à 2, x est initialisé par y
+```
+
+### Initialisation par parentheses
+
+Pour le moment cela ne nous est pas très utile (mais ça le sera dans le chapitre sur les patrons de classe), mais nous
+pouvons initialiser notre variable de la sorte : 
+```
+int x (2);
+```
+
+### Initialisation par accolades
+
+Nous pouvons aussi initialiser par accolade : 
+```
+int x { 2 };
+int y = { 2 };
+```
+
+Attention toute fois, les accolades n'autorisent pas d'**initialisation dégradante**, c'est-à-dire que le compilateur
+va refuser l'initialisation s'il y a une perte de donnée lors de celle-ci :
+```
+int x = 2.5; // Conversion dégradante, nous perdons la partie après la virgule
+cout << x << endl; // Affiche 2
+int y = { 2.5 }; // Refusé par le compilateur
+```
