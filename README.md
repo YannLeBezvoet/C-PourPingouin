@@ -152,6 +152,15 @@ int main() {
 
 ## Les variables
 
+Ce chapitre étant un peu long voici un sommaire pour vous rendre directement à la partie qui vous intéresse :
+
+- [Les types entiers](#Les-types-entiers)
+- [Les entiers dans la mémoire](#Les-entiers-dans-la-mémoire)
+- [Les unsigned int](#Les-unsigned-int)
+- [Les types flottants](#Les-types-flottants)
+- [Les types caractères](#Les-types-caractères)
+
+
 Rentrons maintenant dans le vif du sujet, qu'est-ce qu'une variable ?
 Les variables sont des éléments qui associe un nom à une donnée physiquement implanté dans la mémoire de la machine.
 
@@ -234,3 +243,5 @@ vous pouvez doubler la taille de la plage positive au prix de la plage négative
 Les types flottants s'inspirent de la notation scientifique où un nombre s'écrit sous la forme 3,8x10⁴.
 On appelle **mantisse** (M) la valeur qui est le facteur d'une puissance de 10. On appelle exposant (E) la puissance de 10.
 Chaque flottant est représenté par **M.B^E** où B représente la base de la machine (soit 2, soit 16).
+
+### Les types caractères
