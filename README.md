@@ -170,4 +170,6 @@ qui n'ont leur utilité que sur des processeurs 16 bits._
 
 Alors j'en vois déjà certains se cacher en se demandant "c'est quoi ce truc ?" mais pas de panique nous allons voir les 
 types un par un.
+
+
 <img src="rcs/cacher.gif" alt="HelloWorld"/>
