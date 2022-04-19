@@ -68,7 +68,7 @@ int main() {
 Vous pouvez compiler votre programme avec l'icône de marteau ou compiler puis exécuter votre programme avec la fleche en
 haut à droite de votre écran.
 
-Normalement après exécution de votre programme vous devriez-voir apparaitre ceci dans une console:
+Normalement après exécution de votre programme vous devriez-voir apparaitre ceci dans une console :
 ```
 Hello, World!
 ```
@@ -81,7 +81,7 @@ sur ce programme, mais retenez que :
 sera lu.
 - Pour la ligne ```std::cout << "Hello, World!" << std::endl;``` le mot clé ```cout``` permet d'afficher du texte séparé par
 l'opérateur ```<<``` tandis que ```endl``` permet un retour à la ligne (mais pas que 😉)/
-- ```return 0``` marque la fin du programme (en fait c'est plus compliqué que ça, vous verez dans le chapitre sur les
+- ```return 0``` marque la fin du programme (en fait, c'est plus compliqué que ça, vous verrez dans le chapitre sur les
 fonctions que je suis un peu un menteur).
 - La dernière accolade permet de clore la fonction ```main```.
 
@@ -103,6 +103,8 @@ int main() {
 }
 
 ```
+
+Vous remarquerez que chaque instruction se termine par un `;`.
 
 Felicitation vous avez écrit votre premier programme et vous n'avez rien compris parce que j'ai simplifié au maximum,
 maintenant il est temps de coder pour de vrai !
@@ -160,7 +162,7 @@ Il existe différents types de variables, voyons les types de base :
 | int              | Nombre entier               | 4                | -2147483648 à 2147483647 |
 | short int        | Entier court                | 2                | -32768 à 32767           |
 | float            | Flottant (nombre à virgule) | 4                | 3,4E-38 à 3,4E+38        |
-| double           | Flottant double             | 8                |                          |
+| double           | Flottant double             | 8                | -1.7E-308 à 1.7E308      |
 | long double      | Flottant double long        | 10               | 	-3,4E-4932 à 3,4E4932   |
 | bool             | Booléen                     | 1                | 0 ou 1, faux ou vrai     |
 | char             | Caractère                   | 1                | 	-128 à 127              |
@@ -173,3 +175,14 @@ types un par un.
 
 
 <img src="rcs/cacher.gif" alt="HelloWorld"/>
+
+### Les types entiers
+
+On peut trouver jusqu'à quatre tailles d'entiers différents grâces aux mots clés suivants : **short int**, **int**,
+**long int**, **long long int**. 
+Ces termes peuvent être abrégés respectivement par: **short**, **int**, **long**, **long long**.
+
+Chaque taille a ses limites (se référer au tableau ci-dessus) attention cependant en fonction du processeur utilisé les 
+type entiers ont des valeurs pouvant être différentes de celle du tableau.
+
+#### Les entiers dans la mémoire
