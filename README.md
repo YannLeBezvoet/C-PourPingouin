@@ -159,6 +159,7 @@ Ce chapitre étant un peu long voici un sommaire pour vous rendre directement à
 - [Les unsigned int](#Les-unsigned-int)
 - [Les types flottants](#Les-types-flottants)
 - [Les types caractères](#Les-types-caractères)
+- [Le type bool](#Le-type-bool)
 
 
 Rentrons maintenant dans le vif du sujet, qu'est-ce qu'une variable ?
@@ -245,3 +246,11 @@ On appelle **mantisse** (M) la valeur qui est le facteur d'une puissance de 10. 
 Chaque flottant est représenté par **M.B^E** où B représente la base de la machine (soit 2, soit 16).
 
 ### Les types caractères
+
+En C++ les caractères sont codés sur un octet est déclaré avec le mot clé **char**.
+
+### Le type bool
+
+Bon ça, c'est le type le plus simple, en fait, c'est une variable qui ne peu prendre que deux valeurs : vrai ou faux.
+Cette variable est codée sur un octet et se déclare avec le mot clé **bool**.
+On y associe les deux mots-clés suivants : **false** et **true** pour exprimer la valeur qu'elle contient.
