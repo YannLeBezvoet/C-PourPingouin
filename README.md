@@ -48,7 +48,6 @@ c'est gratos pour toi, sinon il faut payer ou utiliser un autre logiciel tel que
 
 ## Hello world
 
-Bon je vous vois venir "agneugneugneu c'est quand qu'on commence à coder" du calme mes pingouins.
 Bon déjà on va créer un nouveau projet :
 
 <img src="rcs/newProject.png" alt="Nouveau Projet"/>
@@ -342,4 +341,18 @@ Tapez un nombre: 5
 
 Ce chapitre va vous présenter les différents types d'opération arithmétiques et leur priorité, si tu as un minimum bossé
 au college, tu devrais connaitre tes priorités arithmétiques, mais un bref rappel ne fera pas de mal.
+Fait toi un bon café et suit attentivement cette partie, elle te sera utile pour tout le reste.
 
+<img src="rcs/pingouinCafe.png" alt="pingouinCafe"/>
+
+### Les opérateurs "+" et "-"
+
+Bon, gros malin, tu l'as sûrement deviné, tu peux faire des additions et des soustractions, ces opérateurs sont de
+priorité équivalente. Comme en mathématique, tu peux te servir des parenthèses pour changer l'ordre des priorités.
+Exemple : 
+```
+int x = 10 - 2 + 3: // x = 11
+int y = 10 - (2 + 3); // y = 5
+```
+
+### Les opérateurs "*" et "/"
