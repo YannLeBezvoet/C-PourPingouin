@@ -174,7 +174,7 @@ Alors j'en vois déjà certains se cacher en se demandant "c'est quoi ce truc ?"
 types un par un.
 
 
-<img src="rcs/cacher.gif" alt="HelloWorld"/>
+<img src="rcs/cacher.gif" alt="Cacher"/>
 
 ### Les types entiers
 
@@ -186,3 +186,20 @@ Chaque taille a ses limites (se référer au tableau ci-dessus) attention cepend
 type entiers ont des valeurs pouvant être différentes de celle du tableau.
 
 #### Les entiers dans la mémoire
+
+**Remarque** : cette partie n'est pas indispensable à qui veut coder, cependant elle est nécessaire pour comprendre les
+opérations réalisées par votre ordinateur.
+
+Travaillions avec le type le plus petit chez les entiers : le short. Le short s'écrit sur deux octets donc 16 bits (un
+octet correspond à 8 bits) mais les notions que nous allons voir se généralisent à tous les types entiers.
+
+Accroche ta cafetiere on va faire du binaire !
+
+<img src="rcs/café.png" alt="café"/>
+
+**Positif ou négatif ?** : bon déjà tu prends le bit de poids fort (le bit le plus à gauche), s'il est à 0, c'est positif,
+mais s'il est à 1, c'est négatif. Exemple `00000000 00000001` c'est positif et égal à 1, `00000000 00000011` est égal à 
+3, pour les nombres négatifs le bit de poids fort est à 1 et la valeur est maintenant codé en suivant la technique
+du complément deux. Pour ça on exprime la valeur absolue en base de deux puis on la rend négative en passant tout les 0
+à 1 et tout les 1 à 0, puis on ajoute une unité au résultat, exemple : `11111111 11111111` est égal à -1 et 
+`11111111 11111101` est égal à -3.
