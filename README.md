@@ -315,3 +315,7 @@ int x = 2.5; // Conversion dégradante, nous perdons la partie après la virgule
 cout << x << endl; // Affiche 2
 int y = { 2.5 }; // Refusé par le compilateur
 ```
+
+**Remarque** : il existe deux mots clés que nous n'avons pas encore vu pour l'initialisation des variables, il s'agit 
+d'**auto** permettant de définir automatiquement le type de la variable et le mot clé **const** empêchant
+la modification de la variable. Nous utiliserons ces mots-clés plus tard.
