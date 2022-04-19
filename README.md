@@ -226,6 +226,9 @@ Les types flottants sont basiquement une représentation approchée d'un nombre 
 Il existe plusieurs types de float en fonction de la taille qui leur est alloué de la même manière que pour les types
 entiers : **float**, **double** et **long double**.
 
+**Remarque** : de la même manière qu'il existe des entiers non signés (unsigned) il en va de même pour les flottants,
+vous pouvez doubler la taille de la plage positive au prix de la plage négative avec ce mot clé.
+
 **Remarque** : _la suite de cette partie s'adresse à ceux voulant approfondir la notion de nombre flottant._
 
 Les types flottants s'inspirent de la notation scientifique où un nombre s'écrit sous la forme 3,8x10⁴.
