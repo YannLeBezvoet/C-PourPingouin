@@ -80,7 +80,7 @@ sur ce programme, mais retenez que :
 - La ligne ```int main()``` permet de créer la fonction principale de votre code, c'est à partir de là que votre code 
 sera lu.
 - Pour la ligne ```std::cout << "Hello, World!" << std::endl;``` le mot clé ```cout``` permet d'afficher du texte séparé par
-l'opérateur ```<<``` tandis que ```endl``` permet un retour à la ligne (mais pas que 😉)/
+l'opérateur ```<<``` tandis que ```endl``` permet un retour à la ligne (mais pas que 😉).
 - ```return 0``` marque la fin du programme (en fait, c'est plus compliqué que ça, vous verrez dans le chapitre sur les
 fonctions que je suis un peu un menteur).
 - La dernière accolade permet de clore la fonction ```main```.
@@ -203,3 +203,15 @@ mais s'il est à 1, c'est négatif. Exemple `00000000 00000001` c'est positif et
 du complément deux. Pour ça on exprime la valeur absolue en base de deux puis on la rend négative en passant tout les 0
 à 1 et tout les 1 à 0, puis on ajoute une unité au résultat, exemple : `11111111 11111111` est égal à -1 et 
 `11111111 11111101` est égal à -3.
+
+#### Les unsigned int
+
+Bon mes pingouins en fait je suis un peu un menteur, j'ai oublié de vous parler du mot clé **unsigned**.
+
+<img src="rcs/pingouinsLunette.png" alt="pingouinsLunette"/>
+
+Ce mot clé signifie que notre variable sera forcément positive, donc on oublie le délire du bit de poids fort pour
+déterminer le signe, ce sera toujours positif.
+
+On va prendre un **short**, en temps normal sa plage de données va de -32768 à 32767, bon bas là tu oublies la partie
+négative et tu doubles la plage positive ce qui donne une plage allant de 0 à (32767 * 2 + 1) soit 0 à 65535.
